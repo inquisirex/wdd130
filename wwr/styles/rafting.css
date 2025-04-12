@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #FFD700;
-  --secondary-color: #41A0E0;
-  --accent1-color: #BCE0F5;
-  --accent2-color: #333333;
+  --primary-color: #261132;
+  --secondary-color: #FFB86F;
+  --accent1-color: #E0CA3C;
+  --accent2-color: #3E2F5B;
   --header-font: 'Bebas Neue', sans-serif;
   --text-font: 'Lato', sans-serif;
 }
@@ -11,6 +11,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   font-family: var(--text-font);
+  background-color: var(--secondary-color);
 }
 
 .header-grid {
@@ -59,6 +60,10 @@ h1, h2 {
   height: auto;
 }
 
+.contact{
+  display: flex;
+}
+
 p {
   color: var(--accent2-color);
 }
@@ -70,8 +75,20 @@ section img{
 .images-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  height: 100px;
+  width: auto;
   gap: .75rem;
   padding: 20px 0;
+  
+}
+
+.images2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+  width: auto;
+  gap: .75rem;
+  padding: 60px 0;
 }
 
 figcaption {
@@ -160,4 +177,163 @@ footer p{
 
 footer a {
   text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.contact > section { /* Target the direct children sections */
+  width: 50%;
+  box-sizing: border-box; /* Include padding/border in width */
+  display: flex; /* Use flexbox to control the height of children */
+  flex-direction: column;
+}
+
+.contact-grid {
+  display: grid;
+  width: 100%; /* Take up the full width of the section */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  border: 2px solid var(--accent2-color); /* Match form border */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding/border in width */
+  flex-grow: 1; /* Allow it to take up available vertical space */
+  background-color: var(--accent1-color); /* Match form background */
+}
+
+.contact-item {
+  text-align: center;
+  border: 1px solid var(--accent2-color); /* Match form fieldset border */
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--text-font); /* Match form text font */
+  color: var(--accent2-color); /* Match form text color */
+}
+
+.contact-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-item figcaption {
+  font-size: 0.9em;
+  color: var(--accent2-color); /* Match form label color */
+  font-family: var(--text-font); /* Match form text font */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-container {
+  border: 1px solid #aaa;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2; /* Allow the map to take more vertical space */
+}
+
+.form {
+  width: 100%; /* Make the form take the full width of its container */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Adjust padding to match contact-grid */
+  border: 2px solid var(--accent2-color); /* Match the border of the contact-grid */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  background-color: var(--accent1-color); /* Use accent1-color for background */
+  display: flex; /* Use flexbox to arrange form elements */
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+.form legend {
+  color: var(--primary-color); /* Use primary-color for legend text */
+  font-family: var(--header-font); /* Use header-font */
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column; /* Stack labels and inputs vertically */
+  grid-gap: .5rem;
+  margin: 0.5rem 0; /* Adjust margin for fieldsets */
+  border: 1px solid var(--accent2-color); /* Use accent2-color for fieldset border */
+  padding: 1rem;
+}
+
+fieldset > div {
+  display: flex;
+  gap: 1rem; /* Space out username and email inputs */
+  margin-bottom: 0.5rem; /* Add some space below the input row */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+fieldset label {
+  display: block; /* Make labels take full width */
+  margin-bottom: 0.2rem;
+  color: var(--accent2-color); /* Use accent2-color for label text */
+  font-family: var(--text-font); /* Use text-font */
+  font-weight: bold;
+}
+
+fieldset input[type="text"],
+fieldset input[type="email"] {
+  flex-grow: 1; /* Allow inputs to take up remaining space */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  font-family: var(--text-font); /* Use text-font */
+}
+
+fieldset input[type="radio"] + label,
+fieldset input[type="checkbox"] + label {
+  display: inline-block;
+  margin-left: 0.3rem;
+  color: var(--accent2-color); /* Use accent2-color for radio/checkbox labels */
+  font-family: var(--text-font); /* Use text-font */
+}
+
+fieldset > div:last-child {
+  display: block; /* Ensure the last div (checkbox) takes full width */
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  flex-grow: 1; /* Allow textarea to grow vertically */
+  font-family: var(--text-font); /* Use text-font */
+}
+
+button[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: flex-start; /* Align the button to the start of the form */
+  margin-top: 1rem;
+  font-family: var(--header-font); /* Use header-font for button text */
+}
+
+button[type="submit"]:hover {
+  background-color: (var(--secondary-color), 10%);
 }
