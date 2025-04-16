@@ -14,36 +14,42 @@
 </head>
 <body>
     <header class="header-grid">
-        <img src="../images/excitingexpedition.png" alt="Exciting Expeditions Logo" class="logo">
+        <div class="logo-and-name">
+          <img class="logo" src="../images/excitingexpedition.png" alt="Company Logo">
+          <h1 class="company-name">Exciting Expeditions</h1>
+        </div>
         <nav class="nav-grid">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Trips</a>
+          <a href="#">Contact</a>
         </nav>
-    </header>
-
+      </header>
     <main>
-        <H1>Contact Us</H1>
+        <h1>Contact Us</h1>
         <div class="contact">
             <section>
-            <div class="contact-grid">
-                <figure class="contact-item">
-                  <img src="../images/phone.png" alt="phone symbol">
-                  <figcaption>(341)-105-1627</figcaption>
-                </figure>
-                <figure class="contact-item">
-                  <img src="../images/mail.png" alt="email symbol">
-                  <figcaption>excitingexpedition@gmail.com</figcaption>
-                </figure>
-                <figure class="contact-item">
-                  <img src="../images/location.png" alt="location symbol">
-                  <figcaption>Great Salt Lake State Park, 13312 W 1075 S, Magna, UT 84044, United States</figcaption>
-                </figure>
-                <div class="contact-item map-container">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172782.53592955324!2d-112.18289290210842!3d40.691815439535574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875305475563ca6b%3A0x40aea62b775d3974!2sGreat%20Salt%20Lake%20State%20Park!5e0!3m2!1sen!2smx!4v1744438496890!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>            </section>
+                <h2>Contact information</h2>
+                <div class="contact-grid">
+                    <figure class="contact-item">
+                        <img src="../images/phone.png" alt="phone symbol">
+                        <figcaption>(341)-105-1627</figcaption>
+                    </figure>
+                    <figure class="contact-item">
+                        <img src="../images/mail.png" alt="email symbol">
+                        <figcaption>excitingexpedition@gmail.com</figcaption>
+                    </figure>
+                    <figure class="contact-item">
+                        <img src="../images/location.png" alt="location symbol">
+                        <figcaption>Great Salt Lake State Park, 13312 W 1075 S, Magna, UT 84044, United States</figcaption>
+                    </figure>
+                    <div class="contact-item map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172782.53592955324!2d-112.18289290210842!3d40.691815439535574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875305475563ca6b%3A0x40aea62b775d3974!2sGreat%20Salt%20Lake%20State%20Park!5e0!3m2!1sen!2smx!4v1744438496890!5m2!1sen!2smx" width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+                </div>
+            </section>
             <section>
+                <h2>Submission form</h2>
                 <div class="form">
                 <form>
                     <fieldset>
@@ -52,8 +58,8 @@
                             <label>Username: 
                                 <input type="text" id="username" name="Username">
                             </label>
-                            <label>Email Adress:
-                                <input type="email" id="email" name="Email Adress">
+                            <label>Email Address:
+                                <input type="email" id="email" name="Email Address">
                             </label>
                         </div>
                     </fieldset>
@@ -71,15 +77,11 @@
                             <input type="radio" id="website" name="purpose" value="website">
                             <label for="website">Website Suggestion</label>
                         </div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
                         <div>
-                            <div>
-                            <Label for="message">Message: </Label>
-                            </div>
-                            <textarea id="message" name="message"></textarea>
-                        </div>
-                        <div>
-                            <label for="suscription">Please subscribe me to the monthly newsletter</label>
-                            <input type="checkbox" id="suscription" name="Suscription">
+                            <label for="subscription">Please subscribe me to the monthly newsletter</label>
+                            <input type="checkbox" id="subscription" name="subscription">
                         </div>
                     </fieldset>
                     <button type="submit">Send</button>
@@ -88,6 +90,7 @@
             </section>
         </div>
         <section>
+        <h2>Who we are</h2>
         <div class="images2-grid">
             <figure>
                 <img src="../images/employee_lobby.png" alt="Employee at lobby">
@@ -118,7 +121,6 @@
             <img src="../images/twitter.png" alt="twitter">
         </a>
         </div>
-        <a href="https://app.moqups.com/uvJBBdaIGuNS2nPADnbC7wegbElNEzBA/view/page/ad64222d5">Wireframe</a>
     </footer>
 </body>
 </html>
