@@ -359,3 +359,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #e09e50;
 }
+
+.wireframe{
+  color: var(--accent1-color);
+}
