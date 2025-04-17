@@ -371,7 +371,7 @@
   .hero p{
   
   
-  color: black;
+  color: var(--accent2-color);
   
   
   }
@@ -449,7 +449,7 @@
   padding: 20px;
   
   
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(15, 7, 20, 0.8);
   
   
   }
